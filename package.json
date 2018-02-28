@@ -1,0 +1,20 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "This is a class assignment utilizing API calls and Node.js.<br>\r The goal is to create an app called \"Liri\" which will interact with data on Twitter and Spotify.<br>",
+  "main": "key.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniibooii/liri-node-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniibooii/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/Daniibooii/liri-node-app#readme"
+}

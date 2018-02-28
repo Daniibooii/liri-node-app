@@ -2,7 +2,7 @@
 
 # Project Description
 This is a class assignment utilizing API calls and Node.js.<br>
-The goal is to create an app called "Liri" which will interact with data on Twitter and Spotify.<br>
+The goal is to create an app called "Liri" which will interact with data on Twitter, Spotify, and OMDB.<br>
 
 The original instructions can be found below LIRI Bot.<br>
 
