@@ -7,21 +7,42 @@ var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
 
 
+if (process.argv[2] = "my-tweets") {
+  // print request to user: "Which Twitter account?" //
+  var tweets = // user input;
+  function Twitter ();
+};
 
-// OMDB //
-var movie = "mr+nobody";
+if (process.argv[2] = "spotify-this-song") {
+  // print request to user: "Which song?"" //
+  var song = // user input;
+  function Spotify ();
+};
 
-request("https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy"
+if (process.argv[2] = "movie-this") {
+  // print request to user: "Which movie?"" //
+  var movie = // user input;
+  function OMDB ();
+};
+
+if (process.argv[2] = "do-what-it-says") {
+  // print request to user: "What do it say?"" //
+  var says = // user input;
+  function DoWhatItSays ();
+};
+
+// Twitter //
+function Twitter () {request("Twitterapi&limit=20" + tweets + "");
 
   if (!error && response.statusCode === 200) {
 
-    console.log(body.title, body.year, body.imdbRating, body.ratings[0].value, body.country, body.language, body.plot, body.actors);
+    console.log(data, data.date);
+
   }
+}};
 
 // Spotify //
-var track = "The+Sign";
-
-request("	https://api.spotify.com/v1/tracks/" + track + "?market=ES"
+function Spotify () {request("https://api.spotify.com/v1/tracks/" + track + "?market=ES");
 
   if (!error && response.statusCode === 200) {
 
@@ -30,33 +51,33 @@ request("	https://api.spotify.com/v1/tracks/" + track + "?market=ES"
     console.log('Album: ' + data.tracks.items[0].album.name);
     console.log('Preview link: ' + data.tracks.items[0].preview_url);
     // above code based on sample sent by Jon GT //
-
   }
+}};
 
-// Twitter //
-
-
-request("https://api.spotify.com/v1/tracks/" + track + "?market=ES"
+// OMDB //
+function OMDB() {
+var movie = "mr+nobody";
+var movie = process.argv[2];
+request("https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy");
 
   if (!error && response.statusCode === 200) {
 
-    console.log(body.artist, body.name, body.previewLink, body.album, body.country, body.language, body.plot, body.actors);
-    }
+    console.log(body.title, body.year, body.imdbRating, body.ratings[0].value, body.country, body.language, body.plot, body.actors);
+  }
+};
 
-request("https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy"
+// Do What It Says //
+function DoWhatItSays () {
+  request("");
 
-    if (!error && response.statusCode === 200) {
+  if (!error && response.statusCode === 200) {
 
-      console.log(body.title, body.year, body.imdbRating, body.ratings[0].value, body.country, body.language, body.plot, body.actors);
-    }
+    console.log();
 
-// partial instructions below //
+  }
+}};
 
-//Make it so liri.js can take in one of the following commands:
-//* `my-tweets`
-//* `spotify-this-song`
-//* `movie-this`
-//* `do-what-it-says`
+// remmaining, ie unreviewed, notes blow //
 
 //node liri.js my-tweets
 //This will show your last 20 tweets and when they were created at in your terminal/bash window.
